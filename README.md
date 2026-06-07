@@ -9,3 +9,8 @@
 ```bash
 pixi install
 pixi run edit
+```
+
+
+# BINDER
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/diallobakary4/test_molab_deploy/HEAD?urlpath=lab)
