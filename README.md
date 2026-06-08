@@ -1,3 +1,10 @@
+---
+title: Marimo RDKit Demo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # test_molab_deploy
 
 # marimo + Pixi + RDKit + Molab
