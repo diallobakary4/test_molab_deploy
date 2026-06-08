@@ -8,7 +8,7 @@ RUN cat /shell-hook >> /app/entrypoint.sh
 RUN echo 'exec "$@"' >> /app/entrypoint.sh
 
 FROM ubuntu:24.04 AS production
-RUN useradd -m -u 1000 user
+RUN userdel ubuntu && useradd -m -u 1000 user
 ENV PATH="/home/user/.local/bin:$PATH"
 WORKDIR /app
 COPY --from=build /app/.pixi/envs/default /app/.pixi/envs/default
