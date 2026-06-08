@@ -21,3 +21,6 @@ pixi run edit
 
 # BINDER
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/diallobakary4/test_molab_deploy/HEAD?urlpath=lab)
+
+# HF
+[![Open in HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/dbn4/test_molab_deploy)
