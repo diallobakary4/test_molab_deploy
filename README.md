@@ -7,7 +7,7 @@ pinned: false
 
 # marimo + Pixi + RDKit + Molab
 
-[![Open in molab](https://marimo.io/molab-shield.svg)](https://molab.marimo.io/github/diallobakary4/test_molab_deploy/blob/main/notebooks/rdkit_demo.py)
+[![Open in molab](https://marimo.io/molab-shield.svg)](https://molab.marimo.io/github/diallobakary4/test_molab_deploy/blob/main/notebooks/demo_drug_discovery.py)
 
 ## Local
 

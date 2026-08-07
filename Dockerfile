@@ -18,5 +18,5 @@ RUN chown -R user:user /app
 USER user
 EXPOSE 7860
 ENTRYPOINT ["/app/entrypoint.sh"]
-CMD ["marimo", "run", "notebooks/rdkit_demo.py", \
+CMD ["marimo", "run", "notebooks/demo_drug_discovery.py", \
      "--host", "0.0.0.0", "--port", "7860"]
