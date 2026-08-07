@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.23.6"
+__generated_with = "0.23.9"
 app = marimo.App()
 
 
@@ -9,6 +9,7 @@ def _():
     import marimo as mo
     from rdkit import Chem
     from rdkit.Chem import Descriptors
+
     return Chem, Descriptors, mo
 
 
@@ -22,6 +23,12 @@ def _(Chem, Descriptors, mo):
 
     Molecular weight: `{Descriptors.MolWt(mol):.2f}`
     """)
+    return
+
+
+@app.cell
+def _():
+    return
 
 
 if __name__ == "__main__":
