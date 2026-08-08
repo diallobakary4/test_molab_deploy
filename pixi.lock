@@ -291,7 +291,9 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/yarl-1.24.2-pyh7db6752_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
       - pypi: https://files.pythonhosted.org/packages/43/e3/fdc657359e919462369869f1c9f0e973f353f9a9ee295a39b1fea8ee1a77/pillow-12.2.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/61/69/20807746a2e08174d53b571d9955598de77cc63ccc4660cc82be17dc642d/marimo_jupyter_extension-0.3.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6f/ec/550313f340b10501e72e69faf7a04223f99e4877c1cab7972eb3fbac3617/rdkit-2026.3.3-cp312-cp312-manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/8d/c4/97fdd4fca11d06633bb500849f70e4e6b201bcba3833894732e709be2d60/uv-0.12.3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/99/60/14115e6364fa676c5397c2ad3004e527e9aa487abf5d0706ec81bbd08529/numpy-2.4.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-20_gnu.conda
@@ -4354,6 +4356,22 @@ packages:
   - trove-classifiers>=2024.10.12 ; extra == 'tests'
   - defusedxml ; extra == 'xmp'
   requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/61/69/20807746a2e08174d53b571d9955598de77cc63ccc4660cc82be17dc642d/marimo_jupyter_extension-0.3.0-py3-none-any.whl
+  name: marimo-jupyter-extension
+  version: 0.3.0
+  sha256: cefb7ac8d9b6317c772df2e43f12663e958f9fb9473baf07c2e46a41b0d4183a
+  requires_dist:
+  - jupyter-server-proxy
+  - nbconvert>=7.0
+  - pyzmq
+  - traitlets>=5.0
+  - uv>=0.4
+  - pytest-cov>=4.0 ; extra == 'dev'
+  - pytest>=7.0 ; extra == 'dev'
+  - ruff>=0.8.0 ; extra == 'dev'
+  - mkdocs-material>=9.0 ; extra == 'docs'
+  - mkdocs>=1.5 ; extra == 'docs'
+  requires_python: '>=3.10'
 - pypi: https://files.pythonhosted.org/packages/6f/ec/550313f340b10501e72e69faf7a04223f99e4877c1cab7972eb3fbac3617/rdkit-2026.3.3-cp312-cp312-manylinux_2_28_x86_64.whl
   name: rdkit
   version: 2026.3.3
@@ -4361,6 +4379,11 @@ packages:
   requires_dist:
   - numpy
   - pillow
+- pypi: https://files.pythonhosted.org/packages/8d/c4/97fdd4fca11d06633bb500849f70e4e6b201bcba3833894732e709be2d60/uv-0.12.3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: uv
+  version: 0.12.3
+  sha256: 1482d1462b1aecd18ee33627363fe1c63d6a194f12d40d37efc446d9e0d800a1
+  requires_python: '>=3.8'
 - pypi: https://files.pythonhosted.org/packages/99/60/14115e6364fa676c5397c2ad3004e527e9aa487abf5d0706ec81bbd08529/numpy-2.4.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
   name: numpy
   version: 2.4.6
